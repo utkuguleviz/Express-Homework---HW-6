@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<title>Contact Us</title>
+<body>
+
+<form action="http://localhost:3000/contactus" method="POST">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  Full Name:<br>
+  <input type="text" name="fullname" value="Utku Guleviz">
+  <br>
+  Type:<br>
+  <input type="text" name="type" value="suggestion">
+  <br>
+  Message:<br>
+  <input type="text" name="message" value="This is a message">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "http://localhost:3000/contactus".</p>
+
+</body>
+</html>
